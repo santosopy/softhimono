@@ -615,7 +615,7 @@ main {
     display: none;
   }
 }
-.manufacture .wrap ul li figure figcaption:before, .manufacture .wrap ul li figure figcaption:after {
+.manufacture .wrap ul li figure figcaption:before, .manufacture .wrap ul li figure figcaption:after, .manufacture .order .wrap ul li figure .order_set figcaption.title::before, .order .manufacture .wrap ul li figure .order_set figcaption.title::before, .manufacture .order .wrap .order_set ul li figure figcaption.title::before, .order .manufacture .wrap .order_set ul li figure figcaption.title::before {
   content: "";
   position: absolute;
   width: 0;
@@ -634,13 +634,13 @@ main {
   border-top-color: #000000;
   border-width: 9px 6px 0 6px;
 }
-.manufacture .wrap ul li figure figcaption:after {
+.manufacture .wrap ul li figure figcaption:after, .manufacture .order .wrap ul li figure .order_set figcaption.title::before, .order .manufacture .wrap ul li figure .order_set figcaption.title::before, .manufacture .order .wrap .order_set ul li figure figcaption.title::before, .order .manufacture .wrap .order_set ul li figure figcaption.title::before {
   top: -8px;
   border-top-color: #FFFFFF;
   border-width: 9px 5px 0 5px;
 }
 @media screen and (max-width: 954px) {
-  .manufacture .wrap ul li figure figcaption:after {
+  .manufacture .wrap ul li figure figcaption:after, .manufacture .order .wrap ul li figure .order_set figcaption.title::before, .order .manufacture .wrap ul li figure .order_set figcaption.title::before, .manufacture .order .wrap .order_set ul li figure figcaption.title::before, .order .manufacture .wrap .order_set ul li figure figcaption.title::before {
     border-width: 9px 6px 0 6px;
   }
 }
@@ -1071,14 +1071,12 @@ main {
   flex-grow: 1;
   height: 1px;
   background: black;
-}
-.order .wrap .order_set .title::after {
   margin-left: 25px;
   margin-top: 10px;
 }
 .order .wrap .order_set .title::before {
+  margin-left: 0;
   margin-right: 25px;
-  margin-top: 10px;
 }
 .order .wrap .order_set p {
   padding-bottom: 40px;
@@ -1153,7 +1151,7 @@ main {
   height: 1px;
   background: black;
 }
-.order .wrap .order_single .title::after {
+.order .wrap .order_single .title::after, .order .wrap .order_single .order_set .title::before, .order .wrap .order_set .order_single .title::before {
   margin-left: 25px;
   margin-top: 10px;
 }
@@ -1514,7 +1512,7 @@ main {
 
 .contact {
   padding: 50px 0 60px;
-  border-top: 1px solid #A7A7A7;
+  background-color: #FFFFFF;
 }
 @media screen and (max-width: 480px) {
   .contact {

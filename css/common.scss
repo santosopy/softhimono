@@ -241,202 +241,68 @@ header{
     }
 }
 
-.main_visual{
-    > picture{
-        img{
-            @media (min-width: 1854px){
-                height: 754px;
-                width: 100%;
-                object-fit: cover;
-                object-position: center;
-            }
-        }
-    }
-    .text{
-        padding: 60px 0;
-        background-image: url(../img/pattern.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        @include media(sp){
-            padding: 40px 0;
-        }
-        
-        .wrap{
-            @include wrap();
-            text-align: center;
-            margin-top: -200px;
-            @include media(sp){
-                margin-top: -98px;
-            }
+main{
+    background-image: url(../img/bg2.png);
+}
 
-            @keyframes fadeIn {
-                0% { opacity: 0; }
-                100% { opacity: 1; }
-            }
-            .fade-in-image { 
-                animation: fadeIn 3s; 
-            }
-            h2{
-                font-family: $serif;
-                font-size: 20px;
-                padding: 20px 0 50px;
-                @include media(sp){
-                    font-size: 13px;
-                    padding: 18px 0;
-                }
-            }
-            a{
-                @include btn();
-                @include media(sp){
-                    @include btn(100%, 58px);
-                }
-            }
-        }
+.main_visual{
+    background-image: url(../img/mv-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    h2{
+        padding-top: 40px;
     }
 }
 
 .about{
-    padding: 130px 0 100px;
+    margin-top: 55px;
     position: relative;
     overflow: hidden;
     @include media(sp){
-        padding: 50px 0;
+        margin-top: 26px;
     }
 
-    .icon_first{
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        z-index: -1;
-        left: -100px;
-    }
-    .icon_second{
-        position: absolute;
-        top: 50%;
-        transform: translateY(80%);
-        z-index: -1;
-        right: -100px;
-    }
     .wrap{
         @include wrap();
         font-family: $serif;
-        font-weight: 600;
 
         .title{
-            h3{
-                font-weight: 400;
-                font-size: 24px;
-                padding-bottom: 30px;
-                @include media(sp){
-                    font-size: 18px;
-                    padding-bottom: 16px;
-                }
+            text-align: center;
+            padding-top: 100px;
+            @include media(sp){
+                padding-top: 50px;
             }
         }
         .content{
-            .first{
-                ul{
-                    display: flex;
-                    gap: 23px;
-                    flex-wrap: wrap;
-
-                    li{
-                        h4{
-                            font-size: 54px;
-                            line-height: 1.5;
-                            padding-bottom: 80px;
-                            @include media(tab){
-                                padding-bottom: 30px;
-                            }
-                            @include media(sp){
-                                font-size: 36px;
-                            }
-                        }
-                        .info{
-                            @include media(pc){
-                                max-width: 500px;
-                                width: 100%;
-                            }
-
-                            h5{
-                                font-size: 24px;
-                                color: $white;
-                                background-color: $black;
-                                text-align: center;
-                                @include media(tab){
-                                    margin-top: 28px;
-                                    font-size: 20px;
-                                }
-                            }
-                            p{
-                                font-family: $sans;
-                                font-size: 15px;
-                                font-weight: 400;
-                                padding-top: 18px;
-                                @include media(tab){
-                                    font-size: 14px;
-                                }
-                            }
-                        }
-                    }
+            .map{
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+            p{
+                padding: 30px 0 40px;
+                text-align: center;
+                @include media(sp){
+                    padding: 20px 0 30px;
                 }
             }
-            .second{
-                padding-top: 20px;
-
-                ul{
-                    display: flex;
-                    flex-wrap: wrap;
-                    gap: 38px;
-                    justify-content: center;
-                    @include media(sp){
-                        gap: 20px;
-                    }
-                }
-            }
-        }
-        .other{
-            padding-top: 80px;
-            @include media(sp){
-                padding-top: 36px;
-            }
-
             ul{
                 display: flex;
-                gap: 45px;
-                flex-wrap: wrap;
-                background-image: url(../img/pattern2.jpg);
-                background-repeat: no-repeat;
-                background-size: cover;
-                padding: 44px;
+                gap: 40px;
                 justify-content: center;
+                padding-bottom: 70px;
                 @include media(sp){
-                    gap: 13px;
-                    padding: 20px 10px;
+                    padding-bottom: 30px;
+                    flex-wrap: wrap;
+                    gap: 14px;
                 }
 
                 li{
-                    &:first-child{
-                        max-width: 450px;
-                        width: 100%;
-                    }
-                    h3{
-                        font-size: 24px;
-                        border-bottom: 1px solid;
-                        @include media(sp){
-                            font-size: 18px;
-                        }
-                    }
-                    p{
-                        font-size: 15px;
-                        font-weight: 400;
-                        padding-top: 12px;
-                        font-family: $sans;
-                        @include media(sp){
-                            padding-top: 8px;
-                            font-size: 14px;
-                        }
-                    }
+
                 }
             }
         }

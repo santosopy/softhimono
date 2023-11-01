@@ -689,7 +689,15 @@ main {
   }
 }
 
-.inorder .order_top {
+.order {
+  padding: 0 0 90px 0;
+}
+@media screen and (max-width: 1024px) {
+  .order {
+    padding: 0px 0 50px;
+  }
+}
+.order .order_top {
   background-image: url(../img/bgspecial4.jpg);
   background-size: cover;
   background-attachment: fixed;

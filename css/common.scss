@@ -154,6 +154,9 @@ $breakpoints: (
         @include media(tab){
             padding-bottom: 10px;
             font-size: 30px;
+        }  
+        @include media(sp){
+            padding-top: 0;
         }        
         &::after{
             content: '';

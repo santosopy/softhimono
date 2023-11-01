@@ -872,6 +872,11 @@ main {
     font-size: 30px;
   }
 }
+@media screen and (max-width: 480px) {
+  .order .wrap .order_set .title {
+    padding-top: 0;
+  }
+}
 .order .wrap .order_set .title::after, .order .wrap .order_set .title::before {
   content: "";
   flex-grow: 1;
@@ -977,6 +982,11 @@ main {
   .order .wrap .order_single .title {
     padding-bottom: 10px;
     font-size: 30px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .order .wrap .order_single .title {
+    padding-top: 0;
   }
 }
 .order .wrap .order_single .title::after, .order .wrap .order_single .title::before {

@@ -806,6 +806,8 @@ main {
   .order .wrap .order_set-img a figure img {
     width: 380px;
     max-width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 .order .wrap .order_set-img a figcaption {
@@ -912,6 +914,8 @@ main {
   .order .wrap .order_single-img a figure img {
     width: 380px;
     max-width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 .order .wrap .order_single-img a figcaption {

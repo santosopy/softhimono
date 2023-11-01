@@ -366,7 +366,7 @@
                 <div class="order_single">
                     <h3 class="title">単品販売</h3>
                     <p>お好きなそふと干物をお選びいただけます。</p>
-                    <div class="order_single-img">
+                    <div class="order_single-img" ref="orderSingle">
                         <a href="#">
                             <figure class="order_single-img-items pc14">
                                 <img  width="313" src="./img/pc14.jpg" alt="" />
@@ -685,11 +685,11 @@
         </div>
     </footer>
 
-    <!-- <div class="loading" ref="loading">
+    <div class="loading" ref="loading">
         <div class="inner">
             <div class="sbl-circ-path"></div>
         </div>
-    </div> -->
+    </div>
 
     <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script> -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
@@ -708,6 +708,7 @@
                 }
                 this.firstView()
                 window.onresize = this.firstView
+                window.onresize = this.square
             },
             created(){
                 window.onscroll = this.handleScroll
@@ -728,6 +729,21 @@
                     }
                     else{
                         mainVisual.style.height = ""
+                    }
+                },
+                square(){
+                    const orderSingle = this.$refs.orderSingle
+                    if (window.matchMedia("(max-width: 480px)").matches) {
+                        orderSingle.querySelectorAll("a").forEach( e =>{
+                            let img = e.querySelector("img")
+                            img.style.height = `${img.clientWidth}px`
+                        })
+                    }
+                    else{
+                        orderSingle.querySelectorAll("a").forEach( e =>{
+                            let img = e.querySelector("img")
+                            img.style.height = ""
+                        })
                     }
                 }
             }

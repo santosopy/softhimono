@@ -692,7 +692,12 @@ main{
     }
 }
 
-.inorder{
+.order{
+    padding: 0 0 90px 0;
+    @include media(tab){
+        padding: 0px 0 50px;
+    }
+    
     .order_top{
         @include bgSpecial(bgspecial4, 2);
 
@@ -701,14 +706,6 @@ main{
             text-align: center;
         }
     }
-}
-
-.order{
-    padding: 0 0 90px 0;
-    @include media(tab){
-        padding: 0px 0 50px;
-    }
-    
     .wrap{
         @include wrap();
         

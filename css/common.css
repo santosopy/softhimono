@@ -690,7 +690,15 @@ main {
   }
 }
 
-.inorder .order_top {
+.order {
+  padding: 0 0 90px 0;
+}
+@media screen and (max-width: 1024px) {
+  .order {
+    padding: 0px 0 50px;
+  }
+}
+.order .order_top {
   background-image: url(../img/bgspecial4.png);
   background-size: cover;
   background-attachment: fixed;
@@ -701,11 +709,11 @@ main {
   position: relative;
 }
 @media (max-width: 768px) {
-  .inorder .order_top {
+  .order .order_top {
     background-attachment: scroll;
   }
 }
-.inorder .order_top:before {
+.order .order_top:before {
   content: "";
   position: absolute;
   background: url(../img/slice_pattern2.png);
@@ -715,26 +723,17 @@ main {
   display: block;
   background-size: 100%;
 }
-.inorder .order_top > img {
+.order .order_top > img {
   visibility: hidden;
 }
 @media (max-width: 768px) {
-  .inorder .order_top .triangle {
+  .order .order_top .triangle {
     display: none;
   }
 }
-.inorder .order_top .title {
+.order .order_top .title {
   padding: 84px 0;
   text-align: center;
-}
-
-.order {
-  padding: 0 0 90px 0;
-}
-@media screen and (max-width: 1024px) {
-  .order {
-    padding: 0px 0 50px;
-  }
 }
 .order .wrap {
   max-width: calc(1000px + 1rem + 1rem);

@@ -584,46 +584,197 @@ main {
   }
 }
 
-.way_eat {
-  padding-top: 50px;
-  position: relative;
-  overflow: hidden;
+.order {
+  padding: 180px 0 90px;
 }
-.way_eat .wrap {
+@media screen and (max-width: 480px) {
+  .order {
+    padding: 54px 0 60px;
+  }
+}
+.order .wrap {
   max-width: calc(1000px + 1rem + 1rem);
   margin: auto;
   padding: 0 1rem;
 }
-.way_eat .wrap .title {
+.order .wrap .order_set {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.order .wrap .order_set .title {
+  display: flex;
+  align-items: center;
   text-align: center;
   padding-top: 100px;
-  position: relative;
-  z-index: 1;
+  font-size: 30px;
+  text-align: center;
+  line-height: 1.8;
+  padding-bottom: 10px;
 }
 @media screen and (max-width: 480px) {
-  .way_eat .wrap .title {
+  .order .wrap .order_set .title {
     padding-top: 50px;
   }
 }
-.way_eat .wrap .title p {
-  padding-top: 25px;
-}
 @media screen and (max-width: 480px) {
-  .way_eat .wrap .title p {
-    padding-top: 12px;
+  .order .wrap .order_set .title {
+    padding-bottom: 10px;
+    font-size: 15px;
   }
 }
-.way_eat .wrap .content .object1 {
+.order .wrap .order_set .title::after, .order .wrap .order_set .title::before {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  background: black;
+  margin-left: 25px;
+  margin-top: 10px;
+}
+.order .wrap .order_set .title::before {
+  margin-left: 0;
+  margin-right: 25px;
+}
+.order .wrap .order_set p {
+  padding-bottom: 40px;
+  font-family: "Noto Serif JP", serif;
+}
+@media screen and (max-width: 1024px) {
+  .order .wrap .order_set p {
+    padding-bottom: 10px;
+  }
+}
+.order .wrap .order_set .order_set-img {
+  display: flex;
+  justify-content: left;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 1024px) {
+  .order .wrap .order_set .order_set-img {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .order .wrap .order_set .order_set-img a figure img {
+    width: 380px;
+    max-width: 100%;
+  }
+}
+.order .wrap .order_set .order_set-img a figcaption {
+  margin: 0;
+  text-align: left;
+}
+.order .wrap .order_set .order_set-img a figcaption h4 {
+  line-height: 1.3;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Serif JP", serif;
+}
+.order .wrap .order_set .order_set-img a figcaption p {
+  line-height: 1.3;
+  font-size: 20px;
+  font-family: "Noto Serif JP", serif;
+}
+@media screen and (max-width: 1024px) {
+  .order .wrap .order_set .order_set-img a figcaption p {
+    padding-bottom: 0px;
+  }
+}
+.order .wrap .order_single {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.order .wrap .order_single .title {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-top: 100px;
+  font-size: 30px;
+  text-align: center;
+  line-height: 1.8;
+  padding-bottom: 10px;
+}
+@media screen and (max-width: 480px) {
+  .order .wrap .order_single .title {
+    padding-top: 50px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .order .wrap .order_single .title {
+    padding-bottom: 35px;
+    font-size: 17px;
+  }
+}
+.order .wrap .order_single .title::after, .order .wrap .order_single .title::before {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  background: black;
+}
+.order .wrap .order_single .title::after, .order .wrap .order_single .order_set .title::before, .order .wrap .order_set .order_single .title::before {
+  margin-left: 25px;
+  margin-top: 10px;
+}
+.order .wrap .order_single .title::before {
+  margin-right: 25px;
+  margin-top: 10px;
+}
+.order .wrap .order_single p {
+  padding-bottom: 30px;
+  font-family: "Noto Serif JP", serif;
+  font-size: 16px;
+}
+.order .wrap .order_single .order_single-img {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+@media screen and (max-width: 1024px) {
+  .order .wrap .order_single .order_single-img {
+    gap: 15px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .order .wrap .order_single .order_single-img a {
+    max-width: calc(50% - 7.5px);
+  }
+  .order .wrap .order_single .order_single-img a h4 {
+    font-size: 14px;
+    margin: 0;
+  }
+  .order .wrap .order_single .order_single-img a p {
+    font-size: 20px;
+  }
+}
+.order .wrap .order_single .order_single-img a figcaption {
+  margin: 0;
+  text-align: left;
+}
+.order .wrap .order_single .order_single-img a figcaption h4 {
+  line-height: 1.3;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Serif JP", serif;
+}
+.order .wrap .order_single .order_single-img a figcaption p {
+  line-height: 1.3;
+  font-size: 20px;
+  font-family: "Noto Serif JP", serif;
+  padding-bottom: 0;
+}
+.order .wrap .content .object1 {
   position: absolute;
   top: -60px;
   left: -105px;
 }
-.way_eat .wrap .content .object2 {
+.order .wrap .content .object2 {
   position: absolute;
   top: 0;
   right: -300px;
 }
-.way_eat .wrap .content ul {
+.order .wrap .content ul {
   padding-top: 43px;
   display: flex;
   flex-wrap: wrap;
@@ -631,27 +782,27 @@ main {
   gap: 25px;
 }
 @media screen and (max-width: 480px) {
-  .way_eat .wrap .content ul {
+  .order .wrap .content ul {
     padding-top: 21px;
     gap: 18px;
   }
 }
-.way_eat .wrap .content ul li {
+.order .wrap .content ul li {
   max-width: 485px;
   width: 100%;
 }
-.way_eat .wrap .content ul li h3 {
+.order .wrap .content ul li h3 {
   font-size: 24px;
   margin: 10px 0;
   border-bottom: 1px solid;
 }
 @media screen and (max-width: 480px) {
-  .way_eat .wrap .content ul li h3 {
+  .order .wrap .content ul li h3 {
     font-size: 20px;
     margin: 5px 0;
   }
 }
-.way_eat .wrap .content .point {
+.order .wrap .content .point {
   margin: 47px 0 140px;
   background-color: #C1A972;
   color: #FFFFFF;
@@ -660,19 +811,19 @@ main {
   padding: 0;
 }
 @media screen and (max-width: 480px) {
-  .way_eat .wrap .content .point {
+  .order .wrap .content .point {
     padding-top: 50px;
   }
 }
 @media screen and (max-width: 480px) {
-  .way_eat .wrap .content .point {
+  .order .wrap .content .point {
     margin: 23px 0 42px;
   }
 }
 
 .contact {
   padding: 50px 0 60px;
-  border-top: 1px solid #A7A7A7;
+  background-color: #FFFFFF;
 }
 @media screen and (max-width: 480px) {
   .contact {

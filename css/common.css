@@ -584,6 +584,149 @@ main {
   }
 }
 
+.way_eat {
+  padding-top: 50px;
+  position: relative;
+  overflow: hidden;
+}
+@media screen and (max-width: 480px) {
+  .way_eat {
+    padding-top: 0;
+  }
+}
+.way_eat .wrap {
+  max-width: calc(1000px + 1rem + 1rem);
+  margin: auto;
+  padding: 0 1rem;
+}
+.way_eat .wrap .title {
+  text-align: center;
+  padding-top: 100px;
+  position: relative;
+  z-index: 1;
+}
+@media screen and (max-width: 480px) {
+  .way_eat .wrap .title {
+    padding-top: 50px;
+  }
+}
+.way_eat .wrap .title p {
+  padding-top: 25px;
+}
+@media screen and (max-width: 480px) {
+  .way_eat .wrap .title p {
+    padding-top: 12px;
+    text-align: left;
+  }
+}
+.way_eat .wrap .content .object1 {
+  position: absolute;
+  top: -60px;
+  left: -105px;
+}
+.way_eat .wrap .content .object2 {
+  position: absolute;
+  top: 0;
+  right: -300px;
+}
+@media screen and (max-width: 480px) {
+  .way_eat .wrap .content .object2 {
+    right: -120px;
+  }
+}
+.way_eat .wrap .content ul {
+  padding-top: 43px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+@media screen and (max-width: 480px) {
+  .way_eat .wrap .content ul {
+    padding-top: 21px;
+    gap: 18px;
+  }
+}
+.way_eat .wrap .content ul li {
+  max-width: 485px;
+  width: 100%;
+}
+.way_eat .wrap .content ul li h3 {
+  font-size: 24px;
+  margin: 10px 0;
+  border-bottom: 1px solid;
+}
+@media screen and (max-width: 480px) {
+  .way_eat .wrap .content ul li h3 {
+    font-size: 20px;
+    margin: 5px 0;
+  }
+}
+.way_eat .wrap .content .point {
+  margin: 47px 0 140px;
+  background-color: #C1A972;
+  color: #FFFFFF;
+  text-align: center;
+  padding-top: 100px;
+  padding: 12px !important;
+}
+@media screen and (max-width: 480px) {
+  .way_eat .wrap .content .point {
+    padding-top: 50px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .way_eat .wrap .content .point {
+    margin: 23px 0 42px;
+  }
+}
+.way_eat .wrap .content .point h3 {
+  font-size: 28px;
+}
+@media screen and (max-width: 480px) {
+  .way_eat .wrap .content .point h3 {
+    font-size: 22px;
+  }
+}
+
+.inorder .order_top {
+  background-image: url(../img/bgspecial4.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .inorder .order_top {
+    background-attachment: scroll;
+  }
+}
+.inorder .order_top:before {
+  content: "";
+  position: absolute;
+  background: url(../img/slice_pattern2.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 274px;
+  display: block;
+  background-size: 100%;
+}
+.inorder .order_top > img {
+  visibility: hidden;
+}
+@media (max-width: 768px) {
+  .inorder .order_top .triangle {
+    display: none;
+  }
+}
+.inorder .order_top .title {
+  padding: 84px 0;
+  text-align: center;
+}
+
 .order {
   padding: 180px 0 90px;
 }

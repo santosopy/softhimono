@@ -519,6 +519,102 @@ main{
     }
 }
 
+.way_eat{
+    padding-top: 50px;
+    position: relative;
+    overflow: hidden;
+    @include media(sp){
+        padding-top: 0;
+    }
+
+    .wrap{
+        @include wrap();
+
+        .title{
+            @include title();
+            position: relative;
+            z-index: 1;
+
+            p{
+                padding-top: 25px;
+                @include media(sp){
+                    padding-top: 12px;
+                    text-align: left;
+                }
+            }
+        }
+        .content{
+            .object1{
+                position: absolute;
+                top: -60px;
+                left: -105px;
+            }
+            .object2{
+                position: absolute;
+                top: 0;
+                right: -300px;
+                @include media(sp){
+                    right: -120px;
+                }
+            }
+            ul{
+                padding-top: 43px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 25px;
+                @include media(sp){
+                    padding-top: 21px;
+                    gap: 18px;
+                }
+
+                li{
+                    max-width: 485px;
+                    width: 100%;
+
+                    h3{
+                        font-size: 24px;
+                        margin: 10px 0;
+                        border-bottom: 1px solid;
+                        @include media(sp){
+                            font-size: 20px;
+                            margin: 5px 0;
+                        }
+                    }
+                }
+            }
+            .point{
+                margin: 47px 0 140px;
+                background-color: #C1A972;
+                color: $white;
+                @include title();
+                padding: 12px !important;
+                @include media(sp){
+                    margin: 23px 0 42px;
+                }
+
+                h3{
+                    font-size: 28px;
+                    @include media(sp){
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.inorder{
+    .order_top{
+        @include bgSpecial(bgspecial4, 2);
+
+        .title{
+            padding: 84px 0;
+            text-align: center;
+        }
+    }
+}
+
 .order{
     padding: 180px 0 90px;
     @include media(sp){

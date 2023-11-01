@@ -29,6 +29,7 @@
   }
 }
 html {
+  color: #0D1037;
   font-size: 16px;
   scroll-behavior: smooth;
 }
@@ -85,7 +86,8 @@ header .inner .navigation.is_tab #menuToggle {
   position: relative;
   z-index: 1;
   -webkit-user-select: none;
-  user-select: none;
+  -moz-user-select: none;
+       user-select: none;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -740,6 +742,7 @@ main {
   padding: 0 1rem;
 }
 .order .wrap .order_set {
+  padding-top: 50px;
   text-align: center;
   margin-bottom: 30px;
 }
@@ -829,6 +832,20 @@ main {
 @media screen and (max-width: 1024px) {
   .order .wrap .order_set-img a figcaption p {
     font-size: 20px;
+  }
+}
+.order .wrap .order_set-img a figcaption p span {
+  font-size: 18px;
+}
+@media screen and (max-width: 1024px) {
+  .order .wrap .order_set-img a figcaption p span {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .order .wrap .order_set {
+    padding-top: 35px;
+    margin-bottom: 24px;
   }
 }
 .order .wrap .order_single {
@@ -921,6 +938,14 @@ main {
 @media screen and (max-width: 1024px) {
   .order .wrap .order_single-img a figcaption p {
     font-size: 20px;
+  }
+}
+.order .wrap .order_single-img a figcaption p span {
+  font-size: 18px;
+}
+@media screen and (max-width: 1024px) {
+  .order .wrap .order_single-img a figcaption p span {
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 1024px) {

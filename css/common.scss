@@ -64,11 +64,11 @@ $breakpoints: (
 }
 
 @mixin bgSpecial($img:bgspecial, $pattern:1, $flip:false){
-    background-image: url(../img/#{$img}.png);
+    background-image: url(../img/#{$img}.jpg);
     background-size: cover;
     background-attachment: fixed;
-    background-position: top;
-    background-size: 100%;
+    background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
     position: relative;

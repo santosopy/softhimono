@@ -55,7 +55,7 @@
                     <span></span>
                     <span></span>
                     <span></span>
-                    <ul id="menu">
+                    <ul id="menu" ref="menu">
                         <li>
                             <a href="#about">そふと干物とは</a>
                         </li>
@@ -707,6 +707,7 @@
             mounted(){
                 window.onload = ()=>{
                     this.$refs.loading.remove()
+                    this.menuHandle()
                 }
                 this.firstView()
                 window.onresize = this.firstView
@@ -749,6 +750,24 @@
                             img.style.height = ""
                         })
                     }
+                },
+                menuHandle(){
+                    const menu = this.$refs.menu
+                    menu.querySelectorAll("li").forEach( e =>{
+                        const a = e.querySelector("a")
+
+                        a.onclick = (el) =>{
+                            el.preventDefault()
+                            a.closest("#menuToggle").querySelector("input[type='checkbox']").checked = false
+                            const targetId = a.getAttribute("href")
+                            const targetElement = document.querySelector(targetId)
+                            const targetOffsetTop = window.pageYOffset + targetElement.getBoundingClientRect().top
+                            window.scrollTo({
+                                top: targetOffsetTop - 50,
+                                behavior: "smooth"
+                            })
+                        }
+                    })
                 }
             }
         }).mount('#app')

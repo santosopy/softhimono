@@ -775,7 +775,10 @@ main{
         .title{
             padding: 84px 0;
             text-align: center;
-
+            padding-top: 164px;
+            @include media(sp){
+                padding-top: 84px;
+            }
         }
     }
     .wrap{

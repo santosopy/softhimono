@@ -753,7 +753,7 @@ main{
 
 .order{
     padding: 0 0 90px 0;
-    @include media(tab){
+    @include media(sp){
         padding: 0px 0 50px;
     }
     
@@ -763,6 +763,7 @@ main{
         .title{
             padding: 84px 0;
             text-align: center;
+
         }
     }
     .wrap{
@@ -771,7 +772,7 @@ main{
         .order_set{
             padding-top: 50px;
             @include sales();
-            @include media(tab){
+            @include media(sp){
                 padding-top: 35px;
                 margin-bottom: 24px
             }
@@ -780,12 +781,12 @@ main{
             @include sales();
             
             &-img{
-                @include media(tab){
+                @include media(sp){
                     gap: 15px;
                 }
                 
                 a{
-                    @include media(tab){
+                    @include media(sp){
                         max-width: calc(100% / 2 - 7.5px);
                         
                         h4{

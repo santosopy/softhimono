@@ -44,7 +44,7 @@ html body {
 }
 html body a {
   text-decoration: none;
-  color: #000000;
+  color: #0D1037;
   transition: all 0.3s;
 }
 html body a:hover {
@@ -86,7 +86,8 @@ header .inner .navigation.is_tab #menuToggle {
   position: relative;
   z-index: 1;
   -webkit-user-select: none;
-  user-select: none;
+  -moz-user-select: none;
+       user-select: none;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -124,7 +125,7 @@ header .inner .navigation.is_tab #menuToggle span {
   width: 33px;
   height: 2px;
   position: relative;
-  background: #000000;
+  background: #0D1037;
   border-radius: 3px;
   z-index: 2;
   transform-origin: 4px 0px;
@@ -216,7 +217,8 @@ main {
   }
   .main_visual h2 img {
     height: 100%;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
 }
 
@@ -290,7 +292,7 @@ main {
   font-size: 30px;
   border: 1px solid;
   border-radius: 50px;
-  box-shadow: 6px 6px 0px #000000;
+  box-shadow: 6px 6px 0px #0D1037;
   position: relative;
 }
 @media screen and (max-width: 480px) {
@@ -444,6 +446,9 @@ main {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   top: 0;
+}
+.commitment .content .bg_special.special_2 > img {
+  height: 50vh;
 }
 .commitment .content .bg_special.special_3 {
   background-image: url(../img/bgspecial3.jpg);
@@ -654,7 +659,7 @@ main {
   font-size: 30px;
   border: 1px solid;
   border-radius: 50px;
-  box-shadow: 6px 6px 0px #000000;
+  box-shadow: 6px 6px 0px #0D1037;
   position: relative;
 }
 @media screen and (max-width: 480px) {
@@ -788,7 +793,7 @@ main {
 .order {
   padding: 0 0 90px 0;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 480px) {
   .order {
     padding: 0px 0 50px;
   }
@@ -915,7 +920,8 @@ main {
   .order .wrap .order_set-img a figure img {
     width: 380px;
     max-width: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 .order .wrap .order_set-img a figcaption {
@@ -952,7 +958,7 @@ main {
     font-size: 14px;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 480px) {
   .order .wrap .order_set {
     padding-top: 35px;
     margin-bottom: 24px;
@@ -1027,7 +1033,8 @@ main {
   .order .wrap .order_single-img a figure img {
     width: 380px;
     max-width: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 .order .wrap .order_single-img a figcaption {
@@ -1064,12 +1071,12 @@ main {
     font-size: 14px;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 480px) {
   .order .wrap .order_single-img {
     gap: 15px;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 480px) {
   .order .wrap .order_single-img a {
     max-width: calc(50% - 7.5px);
   }
@@ -1113,6 +1120,7 @@ main {
   padding-bottom: 30px;
   text-align: center;
   padding-top: 100px;
+  padding-top: 0;
   text-align: left;
 }
 @media screen and (max-width: 480px) {
@@ -1143,7 +1151,7 @@ main {
 }
 .contact .wrap ul li h3 {
   font-size: 15px;
-  background-color: #000000;
+  background-color: #0D1037;
   color: #FFFFFF;
   padding: 0 5px;
   display: inline-block;
@@ -1302,7 +1310,7 @@ footer .footer_fixed .link a {
   font-size: 30px;
   border: 1px solid;
   border-radius: 50px;
-  box-shadow: 6px 6px 0px #000000;
+  box-shadow: 6px 6px 0px #0D1037;
   position: relative;
 }
 @media screen and (max-width: 480px) {

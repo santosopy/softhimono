@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 
 $white: #FFFFFF;
-$black: #000000;
+$black: #0D1037;
 $sans: 'Noto Sans JP', sans-serif;
 $serif: 'Noto Serif JP', serif;
 
@@ -252,7 +252,7 @@ $breakpoints: (
 }
 
 html{
-    color: #0D1037;
+    color: $black;
     font-size: 16px;
     scroll-behavior: smooth;
     
@@ -265,7 +265,7 @@ html{
         
         a{
             text-decoration: none;
-            color: #000000;
+            color: $black;
             transition: all 0.3s;
             
             &:hover{
@@ -383,7 +383,7 @@ header{
                     width: 56%;
                     z-index: 1;
                     padding: 1rem;
-                    background: #0D1037;
+                    background: $black;
                     list-style-type: none;
                     -webkit-font-smoothing: antialiased;
                     transform-origin: 0% 0%;
@@ -516,6 +516,10 @@ main{
             &.special_2{
                 @include bgSpecial(bgspecial2, 2, true);
                 @include overlay();
+
+                > img{
+                    height: 50vh;
+                }
             }
             &.special_3{
                 @include bgSpecial(bgspecial3);
@@ -830,6 +834,7 @@ main{
             li{
                 padding-bottom: 30px;
                 @include title();
+                padding-top: 0;
                 text-align: left;
                 @media screen and (max-width: 800px) {
                     &:nth-child(2){
@@ -918,7 +923,7 @@ main{
 
 footer{
     padding: 17px 0;
-    background-color: #0D1037;
+    background-color: $black;
     color: #FFFFFF;
     text-align: center;
     font-family: 'Noto Serif JP', serif;

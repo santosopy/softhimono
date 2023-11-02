@@ -213,6 +213,8 @@ main {
   top: 0;
 }
 .main_visual h2 {
+  position: relative;
+  z-index: 1;
   padding-top: 40px;
 }
 @media screen and (max-width: 480px) {
@@ -397,6 +399,13 @@ main {
   background-color: rgba(0, 0, 0, 0.2);
   top: 0;
 }
+@media (min-width: 769px) {
+  .commitment .content .bg_special.special_1 + .wrap ul li:first-of-type {
+    margin-top: -125px;
+    position: relative;
+    z-index: 1;
+  }
+}
 .commitment .content .bg_special.special_2 {
   background-image: url(../img/bgspecial2.jpg);
   background-size: cover;
@@ -452,6 +461,11 @@ main {
 }
 .commitment .content .bg_special.special_2 > img {
   height: 50vh;
+}
+@media screen and (max-width: 480px) {
+  .commitment .content .bg_special.special_2 > img {
+    height: auto;
+  }
 }
 .commitment .content .bg_special.special_3 {
   background-image: url(../img/bgspecial3.jpg);
@@ -563,6 +577,7 @@ main {
   .commitment .content .wrap.special_right ul li:last-child p {
     margin-top: -32px;
     padding: 0;
+    padding-bottom: 20px;
   }
 }
 .commitment .content .wrap.freezer {
@@ -621,6 +636,11 @@ main {
 @media (max-width: 768px) {
   .commitment .content .wrap ul li:first-child {
     margin-left: -30px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .commitment .content .wrap ul li:first-child {
+    margin-left: -120px;
   }
 }
 .commitment .content .wrap ul li:last-child .image {

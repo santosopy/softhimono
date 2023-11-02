@@ -431,6 +431,8 @@ main{
     @include overlay();
     
     h2{
+        position: relative;
+        z-index: 1;
         padding-top: 40px;
         @include media(sp){
             height: 100%;
@@ -517,6 +519,20 @@ main{
             &.special_1{
                 @include bgSpecial();
                 @include overlay();
+
+                + .wrap{
+                    ul{
+                        li{
+                            &:first-of-type{
+                                @media( min-width: 769px){
+                                    margin-top: -125px;
+                                    position: relative;
+                                    z-index: 1;
+                                }
+                            }
+                        }
+                    }
+                }
             }
             &.special_2{
                 @include bgSpecial(bgspecial2, 2, true);
@@ -524,6 +540,9 @@ main{
 
                 > img{
                     height: 50vh;
+                    @include media(sp){
+                        height: auto;
+                    }
                 }
             }
             &.special_3{
@@ -582,6 +601,7 @@ main{
                                 @include media(sp){
                                     margin-top: -32px;
                                     padding: 0;
+                                    padding-bottom: 20px;
                                 }
                             }
                         }
@@ -642,6 +662,9 @@ main{
                     &:first-child{
                         @media (max-width: 768px){
                             margin-left: -30px;
+                        }
+                        @include media(sp){
+                            margin-left: -120px;
                         }
                     }
                     &:last-child{

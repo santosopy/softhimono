@@ -640,7 +640,7 @@ main {
 }
 @media screen and (max-width: 480px) {
   .commitment .content .wrap ul li:first-child {
-    margin-left: -120px;
+    margin-left: -41px;
   }
 }
 .commitment .content .wrap ul li:last-child .image {

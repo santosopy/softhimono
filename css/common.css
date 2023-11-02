@@ -107,6 +107,11 @@ header .inner .navigation.is_tab #menuToggle a {
     padding-top: 50px;
   }
 }
+@media screen and (max-width: 480px) {
+  header .inner .navigation.is_tab #menuToggle a {
+    padding: 12px;
+  }
+}
 header .inner .navigation.is_tab #menuToggle a:hover {
   color: tomato;
 }
